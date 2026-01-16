@@ -1,0 +1,45 @@
+# Archivos específicos del usuario (Visual Studio, VSCode, Rider)
+vs/
+idea/
+vscode/
+*.sln.DotSettings.user
+*.code-workspace
+# Archivos compilados
+*.slo
+*.lo
+*.o
+*.obj
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+# Archivos generados por el motor de Unreal Engine
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+# Plugins y sus archivos generados
+Plugins/**/Intermediate/
+Plugins/**/Binaries/
+# Archivos de mapas construidos (opcional)
+*_BuiltData.uasset
+# Archivos de configuración generados por el editor
+Config/DefaultEditor.ini
+Config/DefaultEditorPerProjectUserSettings.ini
+# Archivos de caché y temporales
+DerivedDataCache/*
+Saved/Logs/
+Saved/Backup/
+# Excluir archivos binarios grandes (usar Git LFS si es necesario)
+*.uasset
+*.umap
+# No ignorar iconos en la carpeta Build
+!Build/**/*.ico
+# Otros archivos innecesarios
+Thumbs.db
+DS_Store
