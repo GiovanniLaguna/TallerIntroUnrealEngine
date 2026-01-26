@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\giova\\Documents\\Unreal Projects\\Project_beat_emup\\",
+  "WorkspaceRootPath": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{543624C5-C333-3B8A-AC2D-EB3402EEE1A0}|Intermediate\\ProjectFiles\\Aura.vcxproj|C:\\Users\\giova\\Documents\\Unreal Projects\\Project_beat_emup\\Source\\Aura\\AuraCharacterBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{543624C5-C333-3B8A-AC2D-EB3402EEE1A0}|Intermediate\\ProjectFiles\\Aura.vcxproj|solutionrelative:Source\\Aura\\AuraCharacterBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuraCharacterBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|solutionrelative:Source\\Aura\\AuraCharacterBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{543624C5-C333-3B8A-AC2D-EB3402EEE1A0}|Intermediate\\ProjectFiles\\Aura.vcxproj|C:\\Users\\giova\\Documents\\Unreal Projects\\Project_beat_emup\\Source\\Aura\\AuraCharacterBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{543624C5-C333-3B8A-AC2D-EB3402EEE1A0}|Intermediate\\ProjectFiles\\Aura.vcxproj|solutionrelative:Source\\Aura\\AuraCharacterBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuroPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|solutionrelative:Source\\Aura\\AuroPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuroPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|solutionrelative:Source\\Aura\\AuroPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\Public\\AuraEnemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|solutionrelative:Source\\Aura\\Public\\AuraEnemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\Private\\AuraEnemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|solutionrelative:Source\\Aura\\Private\\AuraEnemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuraCharacterBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED55C17C-A360-3C40-9C3A-09D9153D582E}|Intermediate\\ProjectFiles\\Aura.vcxproj|solutionrelative:Source\\Aura\\AuraCharacterBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,37 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuraEnemy.cpp",
+              "DocumentMoniker": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\Private\\AuraEnemy.cpp",
+              "RelativeDocumentMoniker": "Source\\Aura\\Private\\AuraEnemy.cpp",
+              "ToolTip": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\Private\\AuraEnemy.cpp",
+              "RelativeToolTip": "Source\\Aura\\Private\\AuraEnemy.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-26T15:36:32.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuraEnemy.h",
+              "DocumentMoniker": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\Public\\AuraEnemy.h",
+              "RelativeDocumentMoniker": "Source\\Aura\\Public\\AuraEnemy.h",
+              "ToolTip": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\Public\\AuraEnemy.h",
+              "RelativeToolTip": "Source\\Aura\\Public\\AuraEnemy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-26T15:36:32.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuroPlayer.cpp",
+              "DocumentMoniker": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuroPlayer.cpp",
+              "RelativeDocumentMoniker": "Source\\Aura\\AuroPlayer.cpp",
+              "ToolTip": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuroPlayer.cpp",
+              "RelativeToolTip": "Source\\Aura\\AuroPlayer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-26T15:35:40.527Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuraCharacterBase.cpp",
-              "DocumentMoniker": "C:\\Users\\giova\\Documents\\Unreal Projects\\Project_beat_emup\\Source\\Aura\\AuraCharacterBase.cpp",
-              "RelativeDocumentMoniker": "Source\\Aura\\AuraCharacterBase.cpp",
-              "ToolTip": "C:\\Users\\giova\\Documents\\Unreal Projects\\Project_beat_emup\\Source\\Aura\\AuraCharacterBase.cpp",
-              "RelativeToolTip": "Source\\Aura\\AuraCharacterBase.cpp",
+              "Title": "AuroPlayer.h",
+              "DocumentMoniker": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuroPlayer.h",
+              "RelativeDocumentMoniker": "Source\\Aura\\AuroPlayer.h",
+              "ToolTip": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuroPlayer.h",
+              "RelativeToolTip": "Source\\Aura\\AuroPlayer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-26T15:35:40.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuraCharacterBase.cpp",
+              "DocumentMoniker": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuraCharacterBase.cpp",
+              "RelativeDocumentMoniker": "Source\\Aura\\AuraCharacterBase.cpp",
+              "ToolTip": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuraCharacterBase.cpp",
+              "RelativeToolTip": "Source\\Aura\\AuraCharacterBase.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-25T04:17:50.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "AuraCharacterBase.h",
-              "DocumentMoniker": "C:\\Users\\giova\\Documents\\Unreal Projects\\Project_beat_emup\\Source\\Aura\\AuraCharacterBase.h",
+              "DocumentMoniker": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuraCharacterBase.h",
               "RelativeDocumentMoniker": "Source\\Aura\\AuraCharacterBase.h",
-              "ToolTip": "C:\\Users\\giova\\Documents\\Unreal Projects\\Project_beat_emup\\Source\\Aura\\AuraCharacterBase.h",
+              "ToolTip": "C:\\Users\\alumnos\\Documents\\GitHub\\TallerIntroUnrealEngine\\Source\\Aura\\AuraCharacterBase.h",
               "RelativeToolTip": "Source\\Aura\\AuraCharacterBase.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-25T04:17:49.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T04:17:49.32Z"
             }
           ]
         }
