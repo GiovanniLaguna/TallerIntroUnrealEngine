@@ -23,6 +23,28 @@ AAuraEnemy();
 	
 	virtual void Die() override;
 
+	// Funcionalidad de Derribo (Knockdown) estilo Hotline Miami
+	void ApplyKnockdown(float Duration, FVector LaunchForce);
+	void RecoverFromKnockdown();
+
+	UPROPERTY(BlueprintReadOnly, Category = "Combat")
+	bool bIsKnockedDown = false;
+
+private:
+	FTimerHandle KnockdownRecoveryTimerHandle;
+
+	UPROPERTY()
+	TObjectPtr<AController> SavedController;
+
+public:
+	void DropWeapon();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	TSubclassOf<class AAuraWeapon> DefaultWeaponClass;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Combat")
+	TObjectPtr<class AAuraWeapon> EquippedWeapon;
+
 	UFUNCTION(BlueprintImplementableEvent, Category = "Effects")
 	void PlayDeathShake();
 
@@ -41,5 +63,8 @@ protected:
 	// Arreglo para darle habilidades iniciales al enemigo desde el Blueprint
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Abilities")
 	TArray<TSubclassOf<class UGameplayAbility>> StartupAbilities;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Effects")
+	TObjectPtr<UMaterialInterface> BloodDecalMaterial;
 	
 };

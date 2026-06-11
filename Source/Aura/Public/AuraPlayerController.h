@@ -59,4 +59,11 @@ private:
 	
 	TScriptInterface<IEnemyInterface> LastActor;
 	TScriptInterface<IEnemyInterface> ThisActor;
+
+	// Variables para el sistema anti-caídas
+	FVector SpawnLocation;
+	bool bHasSpawnLocation = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay", meta = (AllowPrivateAccess = "true"))
+	float FallThresholdOffset = 500.f;
 };

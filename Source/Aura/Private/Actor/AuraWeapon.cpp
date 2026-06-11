@@ -6,6 +6,7 @@
 #include "AbilitySystemComponent.h"
 #include "AbilitySystemGlobals.h"
 #include "GameplayEffect.h"
+#include "AuraEnemy.h"
 
 AAuraWeapon::AAuraWeapon()
 {
@@ -82,7 +83,13 @@ void AAuraWeapon::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 	if (!bIsThrown) return;
 	if (OtherActor == CurrentOwnerCharacter || OtherActor == this) return;
 
-	if (DamageEffectClass)
+	if (AAuraEnemy* TargetEnemy = Cast<AAuraEnemy>(OtherActor))
+	{
+		FVector LaunchDirection = ProjectileMovement->Velocity.GetSafeNormal();
+		// Aplicar derribo por 4 segundos con un impulso físico de 800 unidades
+		TargetEnemy->ApplyKnockdown(4.0f, LaunchDirection * 800.f);
+	}
+	else if (DamageEffectClass)
 	{
 		if (UAbilitySystemComponent* TargetASC = UAbilitySystemGlobals::GetAbilitySystemComponentFromActor(OtherActor))
 		{

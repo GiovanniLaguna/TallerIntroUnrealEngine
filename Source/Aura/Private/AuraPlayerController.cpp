@@ -11,6 +11,8 @@
 #include "Interaction/EnemyInterface.h"
 #include "AuroPlayer.h"
 #include "Kismet/GameplayStatics.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 AAuraPlayerController::AAuraPlayerController()
 {
@@ -23,6 +25,32 @@ void AAuraPlayerController::PlayerTick(float DeltaTime)
 	
 	CursorTrace();
     RotatePawnToCursor(); // Rotación constante hacia el mouse
+
+	APawn* ControlledPawn = GetPawn();
+	if (ControlledPawn)
+	{
+		if (!bHasSpawnLocation)
+		{
+			SpawnLocation = ControlledPawn->GetActorLocation();
+			bHasSpawnLocation = true;
+		}
+
+		// Sistema Anti-Caídas: si cae por debajo del umbral del Player Start
+		if (ControlledPawn->GetActorLocation().Z < (SpawnLocation.Z - FallThresholdOffset))
+		{
+			// Resetear velocidad física si es Character para evitar inercias
+			if (ACharacter* ControlledChar = Cast<ACharacter>(ControlledPawn))
+			{
+				if (UCharacterMovementComponent* MoveComp = ControlledChar->GetCharacterMovement())
+				{
+					MoveComp->Velocity = FVector::ZeroVector;
+				}
+			}
+			
+			// Teletransportar de vuelta a la posición inicial (Player Start)
+			ControlledPawn->SetActorLocation(SpawnLocation);
+		}
+	}
 }
 
 void AAuraPlayerController::BeginPlay()
