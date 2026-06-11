@@ -42,6 +42,9 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<class UInputAction> InteractAction;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	TObjectPtr<class UInputAction> RestartAction;
 	
 	void Interact();
 	void AreaAttack();
@@ -49,6 +52,7 @@ private:
 	void Move(const FInputActionValue& InputActionValue);
 	void CursorTrace();
 	void Attack();
+	void QuickRestart();
     
 	// Función para el estilo Hotline Miami
 	void RotatePawnToCursor();

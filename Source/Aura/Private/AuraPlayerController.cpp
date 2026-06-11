@@ -10,6 +10,7 @@
 #include "EnhancedInputComponent.h"
 #include "Interaction/EnemyInterface.h"
 #include "AuroPlayer.h"
+#include "Kismet/GameplayStatics.h"
 
 AAuraPlayerController::AAuraPlayerController()
 {
@@ -59,6 +60,10 @@ void AAuraPlayerController::SetupInputComponent()
 	{
 		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Started, this, &AAuraPlayerController::Interact);
 	}
+	if (RestartAction)
+	{
+		EnhancedInputComponent->BindAction(RestartAction, ETriggerEvent::Started, this, &AAuraPlayerController::QuickRestart);
+	}
 }
 
 void AAuraPlayerController::Interact()
@@ -98,15 +103,9 @@ void AAuraPlayerController::Move(const FInputActionValue& InputActionValue)
 	APawn* ControlledPawn = GetPawn();
 	if (!ControlledPawn) return;
 
-    // Movimiento Hotline Miami: W siempre es "hacia donde mira el personaje"
-	const FRotator Rotation = ControlledPawn->GetActorRotation();
-	const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
-	
-	const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-	const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-	
-	ControlledPawn->AddMovementInput(ForwardDirection, InputAxisVector.Y);
-	ControlledPawn->AddMovementInput(RightDirection, InputAxisVector.X);
+	// Movimiento absoluto en el plano del mundo (strafing estilo Hotline Miami)
+	ControlledPawn->AddMovementInput(FVector::ForwardVector, InputAxisVector.Y);
+	ControlledPawn->AddMovementInput(FVector::RightVector, InputAxisVector.X);
 }
 
 // ... Resto de funciones (CursorTrace, Attack, Dash, AreaAttack) se mantienen igual que en tu archivo original ...
@@ -172,4 +171,9 @@ void AAuraPlayerController::AreaAttack()
 			ASC->TryActivateAbilitiesByTag(TagContainer);
 		}
 	}
+}
+
+void AAuraPlayerController::QuickRestart()
+{
+	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()));
 }
